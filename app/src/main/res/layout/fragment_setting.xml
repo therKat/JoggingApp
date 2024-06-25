@@ -89,38 +89,38 @@
                 android:textColor="#252E32"
                 android:textSize="16sp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/bg_item_setting">
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:background="@drawable/bg_item_setting">-->
 
-                <TextView
-                    android:id="@+id/voice_noti_setting"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/bg_item_setting"
-                    android:drawableStart="@drawable/ic_voice_setting"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="@font/inter_regular"
-                    android:gravity="center_vertical"
-                    android:padding="15dp"
-                    android:text="@string/voice_notification"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+<!--                <TextView-->
+<!--                    android:id="@+id/voice_noti_setting"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:background="@drawable/bg_item_setting"-->
+<!--                    android:drawableStart="@drawable/ic_voice_setting"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:fontFamily="@font/inter_regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:text="@string/voice_notification"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp" />-->
 
-                <androidx.appcompat.widget.SwitchCompat
-                    android:id="@+id/switch_noti"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerInParent="true"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:thumb="@drawable/bg_thumb"
-                    app:track="@drawable/bg_track"
-                    tools:ignore="UseSwitchCompatOrMaterialXml" />
-            </RelativeLayout>
+<!--                <androidx.appcompat.widget.SwitchCompat-->
+<!--                    android:id="@+id/switch_noti"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                    android:thumb="@drawable/bg_thumb"-->
+<!--                    app:track="@drawable/bg_track"-->
+<!--                    tools:ignore="UseSwitchCompatOrMaterialXml" />-->
+<!--            </RelativeLayout>-->
 
             <TextView
                 android:id="@+id/rate_setting"
@@ -138,21 +138,22 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/privacy_setting"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/bg_item_setting"
-                android:drawableStart="@drawable/ic_policy_setting"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/inter_regular"
-                android:gravity="center_vertical"
-                android:padding="15dp"
-                android:text="@string/setting_policy"
-                android:drawableEnd="@drawable/ic_detail_history"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/privacy_setting"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:background="@drawable/bg_item_setting"-->
+<!--                android:drawableStart="@drawable/ic_policy_setting"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:fontFamily="@font/inter_regular"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:visibility="invisible"-->
+<!--                android:padding="15dp"-->
+<!--                android:text="@string/setting_policy"-->
+<!--                android:drawableEnd="@drawable/ic_detail_history"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp" />-->
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

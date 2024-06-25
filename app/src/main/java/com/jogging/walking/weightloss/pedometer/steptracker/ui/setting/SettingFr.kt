@@ -22,8 +22,6 @@ import javax.inject.Inject
 
 class SettingFr @Inject constructor(): AbsFragment<FragmentSettingBinding>() {
 
-    private var dialogVoiceNotification:DialogVoiceNotification?=null
-
     private var manager: ReviewManager? = null
     private var reviewInfo: ReviewInfo? = null
     override fun getLayoutRes(): Int {
@@ -42,28 +40,17 @@ class SettingFr @Inject constructor(): AbsFragment<FragmentSettingBinding>() {
                 showDialogRate()
             }
         }
-        binding.privacySetting.setOnClickListener {
-            startPolicy()
-        }
+
         binding.profileSetting.setOnClickListener {
             startActivity(ProfileAct.getIntent(requireContext(),2))
         }
         binding.unitSetting.setOnClickListener {
             startUnit()
         }
-        binding.switchNoti.isChecked = sharePrefs.isVoice
-        binding.switchNoti.setOnCheckedChangeListener { _, isChecked ->
-            sharePrefs.isVoice = isChecked
-            showDialogNotification(isChecked)
-        }
-    }
-    private fun showDialogNotification(isChecked:Boolean){
-        if(isChecked) dialogVoiceNotification?.show()
-        else dialogVoiceNotification?.dismiss()
+
     }
 
     override fun initView() {
-        dialogVoiceNotification= DialogVoiceNotification(requireContext())
     }
     private fun startMultiLanguage() {
         startActivity(MultiLangAct.getIntent(requireContext(), 2))
@@ -74,10 +61,6 @@ class SettingFr @Inject constructor(): AbsFragment<FragmentSettingBinding>() {
         startActivity(intent)
     }
 
-    private fun startPolicy() {
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(Constants.POLICY_URL))
-        startActivity(intent)
-    }
 
     private fun showDialogRate() {
         val ratingDialog = DialogRating(requireContext())

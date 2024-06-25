@@ -16,7 +16,7 @@ class ExploreAdapter(
     private val explores: MutableList<Pair<String, Int>> = mutableListOf(
         Pair(context.getString(R.string.bmi), R.drawable.ic_3d_bmi),
         Pair(context.getString(R.string.challenges), R.drawable.ic_3d_challenges),
-        Pair(context.getString(R.string.records), R.drawable.ic_3d_record),
+//        Pair(context.getString(R.string.records), R.drawable.ic_3d_record),
 //        Pair(context.getString(R.string.overall), R.drawable.ic_3d_overall),
     )
 

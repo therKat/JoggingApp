@@ -65,6 +65,7 @@
                 android:fontFamily="@font/manrope_regular"
                 android:text="@string/select_music"
                 android:textColor="#1CAA2A"
+                android:visibility="invisible"
                 android:textSize="@dimen/_12sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

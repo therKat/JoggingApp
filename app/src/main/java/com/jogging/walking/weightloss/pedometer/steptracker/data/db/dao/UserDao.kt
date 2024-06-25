@@ -22,5 +22,4 @@ interface UserDao {
 
     @Update
     suspend fun update(user: User?)
-
 }
